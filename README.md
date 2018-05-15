@@ -1,20 +1,5 @@
-# aliyun-python-sdk-dysmsapi
-Python SDK for Aliyun sms services. officially supports Python 2.7 & 3.3-3.7
-
-
-## INSTALL
-```
-pip install git+https://github.com/micro-services-hub/aliyun-python-sdk-dysmsapi.git
-```
-
-
-## DOC
-  + https://help.aliyun.com/document_detail/55491.html
-
-
 ## Quick start
-```python
-# -*- coding: utf-8 -*-
+```
 import sys
 import json
 import uuid
@@ -28,9 +13,6 @@ from aliyunsdkcore.profile import region_provider
 短信业务调用接口示例，版本号：v20170525
 
 """
-
-reload(sys)
-sys.setdefaultencoding('utf8')
 
 # 注意：不要更改
 REGION = "cn-hangzhou"
