@@ -30,17 +30,16 @@ def send_sms(business_id, phone_numbers, sign_name, template_code, template_para
 
     Args:
         business_id(str): 流水号
-        phone_numbers(str): 电话号码， 暂不支持国际化，e.g.: 18611111111
-        sign_name(str): 签名,
+        phone_numbers(str): 电话号码
+        sign_name(str): 签名
         template_code(str): 模板ID
         template_param(str): json str， e.g: {"code": "123456"}，
           code 模板变量.
 
     Returns(str):
-      - json str. e.g.: '{"Message":"\xe8\xa7\xa6\xe5\x8f\x91\xe5\x88\x86\xe9\x92\x9f\xe7\xba\xa7\xe6\xb5\x81\xe6\x8e\xa7Permits:1",
+      - json str. e.g.: '{"Message":"Permits:1",
                           "RequestId":"11F58C05-6F60-447B-99F8-8BED591EB8B5",
                           "Code":"isv.BUSINESS_LIMIT_CONTROL"}'
-
     """
     smsRequest = SendSmsRequest.SendSmsRequest()
     # 申请的短信模板编码,必填
