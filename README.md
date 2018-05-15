@@ -1,4 +1,3 @@
-## Quick start
 ```
 import sys
 import json
@@ -11,7 +10,6 @@ from aliyunsdkcore.profile import region_provider
 
 """
 短信业务调用接口示例，版本号：v20170525
-
 """
 
 # 注意：不要更改
@@ -92,11 +90,11 @@ def query_send_detail(biz_id, phone_number, page_size, current_page, send_date):
 
 if __name__ == '__main__':
     bid = uuid.uuid1()
-    phone = '18612491225'
+    phone = 'xxxxxxxxxxx'
     sign = '服务'
     tpl_code = 'SMS_127005054'
     param = json.dumps({"code": "12345"})
     res = send_sms(bid, phone, sign, tpl_code, param)
-    print(type(res), res, json.loads(res))
+    print(json.loads(res))
 
 ```
